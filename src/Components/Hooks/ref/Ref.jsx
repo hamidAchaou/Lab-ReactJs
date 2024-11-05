@@ -1,10 +1,13 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Card from "./Card";
 import "./ref.css";
 
 const Ref = () => {
   const lastParagraph = useRef();
   const firstParagraph = useRef();
+
+  // const count = useRef(0); // nutable
+  // const [count] = useState(0); // imutable
 
   const goToTop = () => {
     firstParagraph.current?.scrollIntoView({ behavior: "smooth" });
