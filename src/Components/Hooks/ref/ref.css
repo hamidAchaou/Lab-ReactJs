@@ -1,0 +1,62 @@
+/* Main container styling */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #777;
+  padding: 20px;
+}
+
+/* Card styling */
+.sectionRef {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  gap: 15px;
+  margin: 2%;
+}
+
+.sectionRef img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sectionRef p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+}
+
+/* Button styling */
+.btnGo {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 15px 0;
+}
+
+.btnGo:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.btnGo:active {
+  transform: translateY(1px);
+}
