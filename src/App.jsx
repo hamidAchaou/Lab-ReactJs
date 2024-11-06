@@ -1,13 +1,9 @@
+import React from "react";
+
 import "./App.css";
-import Ref from "./Components/Hooks/ref/Ref";
-import Props from "./Components/props/Props";
+import Mmeo from "./Hooks/memo/Mmeo";
 function App() {
-  return (
-    <>
-      {/* <Props /> */}
-      <Ref />
-    </>
-  );
+  return <Mmeo />;
 }
 
 export default App;

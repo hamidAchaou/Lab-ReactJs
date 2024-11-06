@@ -1,0 +1,59 @@
+/* General styling for the app container */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Container for ThemeSwitcher */
+  .theme-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Styling for theme switcher text and background */
+  .theme-container.light {
+    background-color: #ffffff;
+    color: #333333;
+  }
+  
+  .theme-container.dark {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  /* Styling for the theme switcher button */
+  .theme-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Hover and active states for the button */
+  .theme-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .theme-button:active {
+    transform: translateY(1px);
+  }
+  
