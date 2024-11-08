@@ -1,9 +1,9 @@
 import React from "react";
 
 import "./App.css";
-import Mmeo from "./Hooks/memo/Mmeo";
+import Callback from "./Hooks/callback/Callback";
 function App() {
-  return <Mmeo />;
+  return <Callback />;
 }
 
 export default App;

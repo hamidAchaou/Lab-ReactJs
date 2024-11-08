@@ -1,0 +1,92 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container for the entire component */
+  .callback-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f7fc;
+    padding: 20px;
+  }
+  
+  /* Container for the value section */
+  .values-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the value titles */
+  .value-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Container for the buttons */
+  .button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Button styling */
+  .btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Salary button */
+  .salary-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .salary-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  /* Age button */
+  .age-btn {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  .age-btn:hover {
+    background-color: #1976d2;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive design for mobile screens */
+  @media (max-width: 600px) {
+    .callback-container {
+      padding: 15px;
+    }
+  
+    .value-title {
+      font-size: 1.5rem;
+    }
+  
+    .button-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  }
+  
