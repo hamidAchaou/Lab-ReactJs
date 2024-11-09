@@ -1,8 +1,8 @@
 import React from "react";
-import ContextProvider from "/src/Hooks/Context/Context";
+import Reducer from "./Hooks/Reducer/Reducer";
 
 const App = () => {
-  return <ContextProvider />;
+  return <Reducer />;
 };
 
 export default App;

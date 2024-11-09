@@ -1,0 +1,90 @@
+/* Container for the Reducer component */
+.reducer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Title of the Reducer component */
+  .reducer-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  /* Card container for the counter */
+  .counter-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  /* Counter heading */
+  .counter-heading {
+    font-size: 2.5rem;
+    color: #34495e;
+    margin-bottom: 20px;
+  }
+  
+  /* Button container for the counter */
+  .counter-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  /* Style for individual buttons */
+  .btnCounter {
+    background-color: #3498db;
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 80px;
+  }
+  
+  .btnCounter:hover {
+    background-color: #2980b9;
+  }
+  
+  .btnCounter:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.7);
+  }
+  
+  .btnCounter:active {
+    background-color: #1f5d78;
+  }
+  
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    .reducer-container {
+      padding: 10px;
+    }
+  
+    .counter-card {
+      width: 250px;
+    }
+  
+    .counter-buttons {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .btnCounter {
+      width: 100%;
+    }
+  }
+  
