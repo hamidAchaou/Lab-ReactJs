@@ -1,9 +1,9 @@
 import React from "react";
+import ContextProvider from "/src/Hooks/Context/Context"; // Ensure the path is correct
+import ListNames from "./Hooks/Context/ListNames";
 
-import "./App.css";
-import Callback from "./Hooks/callback/Callback";
-function App() {
-  return <Callback />;
-}
+const App = () => {
+  return <ContextProvider />;
+};
 
 export default App;
