@@ -1,14 +1,17 @@
 import React, { useReducer } from "react";
 import ButtonCounter from "./ButtonCounter";
 import "./Reducer.css";
+
+// Initial state and reducer function should be defined first
 const initialState = { count: 0 };
+
 const reducer = (state, action) => {
   switch (action.type) {
     case "increment":
       return { count: state.count + 1 };
     case "decrement":
-      return { count: state.count + 1 };
-    case "resete":
+      return { count: state.count - 1 }; // Fix decrement logic (was adding 1)
+    case "reset":
       return initialState;
     default:
       throw new Error();
@@ -24,15 +27,13 @@ const Reducer = () => {
       <div className="counter-card">
         <h2 className="counter-heading">Count: {state.count}</h2>
         <div className="counter-buttons">
-          <ButtonCounter
-            handelClick={handelClick(dispatch({ type: "incriment" }))}
-          >
+          <ButtonCounter handelClick={() => dispatch({ type: "increment" })}>
             +
           </ButtonCounter>
-          <ButtonCounter handelClick={dispatch({ type: "decrement" })}>
+          <ButtonCounter handelClick={() => dispatch({ type: "decrement" })}>
             -
           </ButtonCounter>
-          <ButtonCounter handelClick={dispatch({ type: "resete" })}>
+          <ButtonCounter handelClick={() => dispatch({ type: "reset" })}>
             reset
           </ButtonCounter>
         </div>
