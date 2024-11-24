@@ -11,6 +11,7 @@ const ContextProvider = ({ children }) => {
     { id: "2", name: "Hamid", email: "Hamid@gmail.com" },
     { id: "3", name: "Younes", email: "younes@gmail.com" },
     { id: "4", name: "Mohamed", email: "mohamed@gmail.com" },
+    { id: "5", name: "oumaima", email: "oumaima@gmail.com" },
   ];
 
   return (

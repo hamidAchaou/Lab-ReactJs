@@ -4,7 +4,7 @@ import Tbody from "./Tbody";
 import { NamesContext } from "./Context"; // Change this to import from Context.js
 
 const Tables = () => {
-  const names = useContext(NamesContext); // names is the context data
+  const users = useContext(NamesContext); // names is the context data
 
   return (
     <table className="styled-table">
@@ -15,7 +15,7 @@ const Tables = () => {
           <th>Email</th>
         </tr>
       </thead>
-      <Tbody users={names} />
+      <Tbody users={users} />
     </table>
   );
 };
