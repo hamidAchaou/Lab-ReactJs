@@ -10,11 +10,11 @@ import Context from "./Hooks/Context/Context";
 const App = () => {
   return (
     <>
-      <Context />
+      {/* <Context /> */}
       {/* <Callback /> */}
       {/* <ContextProvider /> */}
       {/* <Mmeo /> */}
-      {/* <Reducer /> */}
+      <Reducer />
       {/* <Props /> */}
       {/* <Ref /> */}
     </>
